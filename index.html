@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎王红鑫来到我的网站</h1>
+        <p>你是个大土狗</p>
+    </header>
+
+    <div class="content">
+        <h2>关于我们</h2>
+        <p>这里可以填写网站的内容介绍...</p>
+       <img src="sss.jpg" alt="我的图片描述">
+        
+        <h3>功能演示</h3>
+        <button class="button" onclick="showMessage()">点击这里</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML = "你好！这是一个JavaScript交互示例！";
+        }
+    </script>
+</body>
+</html>
